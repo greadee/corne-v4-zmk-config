@@ -20,6 +20,6 @@
             &gpio1 6  GPIO_ACTIVE_LOW
         >;
 
-        diode-direction = "col-to-row";
+        diode-direction = "col2row";
     };
 };
