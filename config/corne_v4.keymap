@@ -1,0 +1,25 @@
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+
+    default_layer {
+      bindings = <
+        /* LEFT 3x6 */
+        &kp Q &kp W &kp E &kp R &kp T &kp Y
+        &kp A &kp S &kp D &kp F &kp G &kp H
+        &kp Z &kp X &kp C &kp V &kp B &kp N
+
+        /* LEFT THUMBS */
+        &kp LCTRL &kp SPACE &kp LALT
+
+        /* RIGHT 3x6 */
+        &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT
+        &kp J &kp K &kp L &kp SEMI &kp SQT &kp RET
+        &kp M &kp COMMA &kp DOT &kp SLASH &kp UP &kp DOWN
+
+        /* RIGHT THUMBS */
+        &kp RALT &kp BSPC &kp RCTRL
+      >;
+    };
+  };
+};
