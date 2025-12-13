@@ -1,41 +1,20 @@
 / {
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-
-        /* 3 rows */
+        diode-direction = "col2row";
         row-gpios = <
             &gpio0 6  GPIO_ACTIVE_LOW
             &gpio0 8  GPIO_ACTIVE_LOW
             &gpio0 17 GPIO_ACTIVE_LOW
-        >;
-
-        /* 7 columns (6 main + thumbs) */
-        col-gpios = <
             &gpio0 20 GPIO_ACTIVE_LOW
+        >;
+        col-gpios = <
             &gpio0 22 GPIO_ACTIVE_LOW
             &gpio0 24 GPIO_ACTIVE_LOW
             &gpio1 0  GPIO_ACTIVE_LOW
             &gpio0 11 GPIO_ACTIVE_LOW
             &gpio1 4  GPIO_ACTIVE_LOW
             &gpio1 6  GPIO_ACTIVE_LOW
-        >;
-
-        diode-direction = "col2row";
-    };
-};
-
-/ {
-    matrix_transform {
-        compatible = "zmk,matrix-transform";
-
-        rows = <4>;
-        columns = <6>;
-
-        map = <
-            0  1  2  3  4  5
-            6  7  8  9 10 11
-            12 13 14 15 16 17
-            18 19 20 0xFFFFFFFF 0xFFFFFFFF 0xFFFFFFFF
         >;
     };
 };
