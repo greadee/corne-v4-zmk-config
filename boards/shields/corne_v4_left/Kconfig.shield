@@ -1,0 +1,2 @@
+config SHIELD_CORNE_V4_LEFT
+    bool "Corne v4 left half"
