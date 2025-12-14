@@ -13,17 +13,18 @@
             0  
         >;
     };
-};
 
-kscan0: kscan {
-    compatible = "zmk,kscan-gpio-matrix";
-    diode-direction = "row2col";
 
-    row-gpios = <
-        &gpio0 22 GPIO_ACTIVE_HIGH /* D4  */
-    >;
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "row2col";
 
-    col-gpios = <
-        &gpio0 29 0x11  /* D14 */
-    >;
+        row-gpios = <
+            &gpio0 22 GPIO_ACTIVE_HIGH /* D4  */
+        >;
+
+        col-gpios = <
+            &gpio0 29 0x11  /* D14 */
+        >;
+    };
 };
