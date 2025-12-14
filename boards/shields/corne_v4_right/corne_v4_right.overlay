@@ -6,13 +6,10 @@
 
     matrix_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
-        rows = <4>;
-        columns = <6>;
+        rows = <1>;
+        columns = <1>;
         map = <
-            0  1  2  3  4  5
-            6  7  8  9 10 11
-           12 13 14 15 16 17
-           18 19 20 21 22 23
+            0  
         >;
     };
 };
@@ -23,17 +20,9 @@ kscan0: kscan {
 
     row-gpios = <
         &gpio0 22 GPIO_ACTIVE_HIGH /* D4  */
-        &gpio0 24 GPIO_ACTIVE_HIGH /* D5  */
-        &gpio1 0  GPIO_ACTIVE_HIGH /* D6  */
-        &gpio0 11 GPIO_ACTIVE_HIGH /* D7  */
     >;
 
     col-gpios = <
         &gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)  /* D14 */
-        &gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)  /* D15 */
-        &gpio0 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)  /* A0  */
-        &gpio0 3  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)  /* A1  */
-        &gpio0 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)  /* A2  */
-        &gpio0 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)  /* A3  */
     >;
 };
