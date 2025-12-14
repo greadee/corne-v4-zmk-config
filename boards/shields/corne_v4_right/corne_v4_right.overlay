@@ -1,4 +1,10 @@
 
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix-transform = &matrix_transform;
+    };
+};
 / { 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
@@ -19,6 +25,21 @@
             &gpio1 13 GPIO_ACTIVE_LOW
             &gpio1 11 GPIO_ACTIVE_LOW
 
+        >;
+    };
+};
+/ {
+    matrix_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+
+        columns = <6>;
+        rows = <4>;
+
+        map = <
+             0  1  2  3  4  5
+             6  7  8  9 10 11
+            12 13 14 15 16 17
+            18 19 20
         >;
     };
 };
