@@ -13,11 +13,9 @@ shield: [ "corne_left", "corne_right" ]
 include:
 - board: nice_nano_v2
   shield: corne_left
-  snippet: zmk-usb-logging
   artifact-name: normal-left
 - board: nice_nano_v2
   shield: corne_right
-  snippet: zmk-usb-logging
   artifact-name: normal-right
 
 # debugging
