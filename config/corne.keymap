@@ -10,6 +10,8 @@
         &kp Q &kp W &kp E &kp R &kp T &kp Y   &none &none &none &none &none &none
         &kp A &kp S &kp D &kp F &kp G &kp H   &none &none &none &none &none &none
         &kp Z &kp X &kp C &kp V &kp B &kp N   &none &none &none &none &none &none
+        &none &none &none &kp I &kp O &kp P   &none &none &none &none &none &none
+
       >;
     };
   };
