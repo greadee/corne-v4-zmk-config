@@ -1,4 +1,4 @@
-if SHIELD_CORNE_V4_LEFT_ROW45
+if SHIELD_CORNE_V4_LEFT_COL01
 
 config ZMK_KEYBOARD_NAME
     default "Corne V4"
@@ -8,7 +8,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CORNE_V4_LEFT_ROW45
+if SHIELD_CORNE_V4_LEFT_COL01
 
 config ZMK_SPLIT
     default y
