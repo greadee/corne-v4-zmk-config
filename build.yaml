@@ -39,6 +39,11 @@ include:
   cmake-args: -DCONFIG_ZMK_SPLIT=n -DCONFIG_ZMK_BLE=n
   artifact-name: standalone-left-col01-usb-debug
 - board: nice_nano_v2
+  shield: corne_v4_left_misscols
+  snippet: zmk-usb-logging
+  cmake-args: -DCONFIG_ZMK_SPLIT=n -DCONFIG_ZMK_BLE=n
+  artifact-name: standalone-left-misscols-usb-debug
+- board: nice_nano_v2
   shield: corne_v4_right
   snippet: zmk-usb-logging
   artifact-name: logging-right
